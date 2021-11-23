@@ -2,7 +2,7 @@ from azure.cosmos import CosmosClient, exceptions
 import os
 
 url = os.environ['ACCOUNT_URI']
-key = os.environ['ACCOUNT_Key']
+key = os.environ['ACCOUNT_KEY']
 client = CosmosClient(url, credential=key)
 database_name = 'testDatabase'
 try:
