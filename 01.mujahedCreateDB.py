@@ -1,8 +1,8 @@
 from azure.cosmos import CosmosClient, exceptions
 import os
 
-url = os.environ['https://rgdb.documents.azure.com:443/']
-key = os.environ['qetiOLTp1XaE1CyG3E6NMKyfXIG9b7aIZHKBz8AsljxoQ6kMozErxqUetSEOiu8tbVjWsXLEjP5DT8wcnVbF3g==']
+url = os.environ['ACCOUNT_URI']
+key = os.environ['ACCOUNT_Key']
 client = CosmosClient(url, credential=key)
 database_name = 'testDatabase'
 try:
